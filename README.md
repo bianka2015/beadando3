@@ -31,7 +31,7 @@ Vendég: Az a felhasználó, aki azonosítatlanul használja az alkalmazást. A 
 ![Használati diagram](docs/images/hasznalati_diagram.png)
 
 #### 1.3.3. Folyamatok pontos menete
-![Új tárgy felvétele](docs/images/ujtargyfolyamat.png)
+![Új recept létrehozása](docs/images/ujreceptfolyamat.png)
 
 Cím: Új recept létrehozása
 Cél: Új recept létrehozása.
