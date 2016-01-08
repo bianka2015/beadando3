@@ -1,0 +1,26 @@
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Mennyiség</th>
+            <th>Recept</th>
+            <th>Gombok</th>
+        </tr>   
+    </thead>
+    <tbody>
+
+        {{#each alapanyagok}}
+        <tr>
+            {{!--{{log this}}--}}
+            <td>{{nev}}</td>
+            <td>{{mennyiseg}}</td>
+            <td>{{recept.nev}}</td>
+            <td>
+                {{link-to "Szerkeszt" "alapanyagok.edit" this class="btn btn-default btn-sm"}}
+                <button {{action "deleteAlapanyag" this}} class="btn btn-default btn-sm">Töröl</button>
+            </td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>

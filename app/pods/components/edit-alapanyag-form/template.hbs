@@ -1,0 +1,29 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if alapanyagok.nev "has-error"}}">
+            <label for="nev" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <!--textarea class="form-control" rows="3" id="nev"  name="nev">{{!--data.nev--}}</textarea-->
+                <input class="form-control" id="nev" name="nev" type="text" value="{{data.nev}}">
+                <span class="help-block">A nevet kötelező megadni.</span>
+            </div>
+        </div>
+        
+        <div class="form-group {{if alapanyagok.mennyiseg "has-error"}}">
+            <label for="mennyiseg" class="col-lg-2 control-label">Mennyiség</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="mennyiseg" name="mennyiseg" type="text" value="{{data.mennyiseg}}">
+                <span class="help-block">A mennyiséget kötelező megadni.</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button {{action "submit"}} class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        
+
+

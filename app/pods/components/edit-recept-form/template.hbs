@@ -1,0 +1,36 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if receptek.nev "has-error"}}">
+            <label for="nev" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="nev" name="nev" type="text" value="{{data.nev}}">
+                <span class="help-block">A nevet kötelező megadni.</span>
+            </div>
+        </div>
+        
+        <div class="form-group {{if receptek.ido "has-error"}}">
+            <label for="ido" class="col-lg-2 control-label">Elkészítési idő</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="ido" name="ido" type="text" value="{{data.ido}}">
+                <span class="help-block">Az elkészítési időt kötelező megadni.</span>
+            </div>
+        </div>
+        
+         <div class="form-group {{if receptek.leiras "has-error"}}">
+            <label for="leiras" class="col-lg-2 control-label">Leírás</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="leiras"  name="leiras">{{data.leiras}}</textarea>
+                <span class="help-block">A leírást kötelező megadni.</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button {{action "submit"}} class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        
+
+
