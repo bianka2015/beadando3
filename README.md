@@ -89,19 +89,19 @@ Alapanyagok listája
 Recept
 Leírás: A receptek adatai ebben a táblában kerülnek tárolásra.
 Attribútumok:
-    - id: recept azonosítója az adatbázisban
-    - nev: recept neve
-    - elkeszitesi_ido: recept elkészítési ideje
-    - leiras: recept leírása
-    - alapanyagok: recept alapanyagai
+  - id: recept azonosítója az adatbázisban
+  - nev: recept neve
+  - elkeszitesi_ido: recept elkészítési ideje
+  - leiras: recept leírása
+  - alapanyagok: recept alapanyagai
     
 Alapanyag
 Leírás: Az alapanyagok adatai ebben a táblában kerülnek tárolásra.
 Attribútumok:
-    - id: alapanyag azonosítója az adatbázisban
-    - nev: alapanyag neve
-    - mennyiseg: alapanyag mennyisége
-    - recept: melyik recepthez tartozik az alapanyag
+  - id: alapanyag azonosítója az adatbázisban
+  - nev: alapanyag neve
+  - mennyiseg: alapanyag mennyisége
+  - recept: melyik recepthez tartozik az alapanyag
 
 Kapcsolatok: Egy recepthez sok alapanyag tartozik, egy alapanyag csak egy recepthez tartozhaz (egy-sok kapcsolat).
 
@@ -134,8 +134,12 @@ A docs/images mappában vannak a dokumentációhoz szükséges képek és ábrá
 
 ## 4. Tesztelés
 
-### 4.1. Tesztesetek felsorolása
-- 
+### 4.1. Kipróbált tesztesetek
+- új recept
+- recept módosítása
+- új alapanyag
+- alapanyag módosítása
+- alapanyag törlése
 
 ## 5. Felhasználói dokumentáció
 
